@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated class="q-ma-md rounded-borders">
+    <q-header class="q-ma-md rounded-borders bg-white shadow-1">
       <q-toolbar>
         <q-btn
           flat
@@ -9,11 +9,14 @@
           icon="menu"
           aria-label="Menu"
           @click="toggleLeftDrawer"
+          color="dark"
         />
 
         <q-toolbar-title>
           <BreadcrumbComponent />
         </q-toolbar-title>
+
+        <q-space />
 
         <div class="q-gutter-sm row items-center no-wrap">
           <LanguageComponent />
@@ -62,6 +65,9 @@ export default defineComponent({
       toggleLeftDrawer() {
         leftDrawerOpen.value = !leftDrawerOpen.value;
       },
+      text: ref(''),
+      ph: ref(''),
+      dense: ref(false)
     };
   },
 });

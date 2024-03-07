@@ -4,11 +4,11 @@
       @submit="onSubmit"
       class="col-10 col-md-4 shadow-1 q-pa-md rounded-borders"
     >
-      <div class="text-h4 text-center">CORE FE</div>
+      <div class="text-h4 text-center">WELCOME BACK</div>
       <q-input
-        v-model="username"
+        v-model="email"
         type="email"
-        :label="$t('username')"
+        :label="$t('email')"
         :rules="[vRequired, vEmail]"
       />
       <q-input
@@ -22,7 +22,7 @@
       </div>
       <div class="q-pt-md row">
         <q-select
-          class="col-6 offset-6 col-md-3 offset-md-9"
+          class="col-6 offset-6 col-md-3 offset-md-9 bg-red"
           :label="$t('language')"
           v-model="locale"
           :options="localeOptions"
@@ -48,7 +48,7 @@ export default defineComponent({
   setup() {
     const { locale } = useI18n({ useScope: 'global' });
     const router = useRouter();
-    const username = ref('admin@admin.com');
+    const email = ref('admin@admin.com');
     const password = ref('123');
     return {
       vRequired,
@@ -59,12 +59,12 @@ export default defineComponent({
         { value: 'en-US', label: 'English' },
         { value: 'vi-VN', label: 'Vietnamese' },
       ],
-      username,
+      email,
       password,
       onSubmit() {
         const authStore = useAuthStore();
         authStore.user = {
-          username: username.value,
+          email: email.value,
         };
         router.push({ name: 'dashboard' });
         return true;

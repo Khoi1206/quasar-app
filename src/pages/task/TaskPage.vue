@@ -1,24 +1,23 @@
 <template>
-  <q-page padding>
-    <h1>Hello</h1>
+  <q-page class="q-pa-md q-mt-md">
 
   </q-page>
 </template>
 
-<script lang='ts'>
+<script lang="ts">
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'IndexPage',
-  components: {
-
-  },
+  name: 'TaskPage',
+  components: {},
   setup() {
 
-    return { };
+    return {
+
+    };
   },
   methods: {
 
-  }
+  },
 });
 </script>

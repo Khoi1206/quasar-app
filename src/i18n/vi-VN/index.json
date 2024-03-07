@@ -30,9 +30,9 @@
   "want_delete": "Bạn có muốn xóa dữ liệu này?",
   "general": "Tổng quan",
   "history": "Lịch sử",
-
   "uploadlogo": "Tải Logo",
   "titleweb": "Tiêu đề Website",
-
-  "status": "Trạng thái"
+  "status": "Trạng thái",
+  "todo": "Việc cần làm",
+  "task": "Tài liệu"
 }

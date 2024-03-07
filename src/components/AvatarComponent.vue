@@ -14,7 +14,7 @@
         <q-separator />
         <q-item clickable @click="logout" v-ripple>
           <q-item-section avatar>
-            <q-avatar icon="arrow_forward" color="primary" size="md" text-color="white"/>
+            <q-avatar icon="arrow_forward" color="dark" size="md" text-color="white"/>
           </q-item-section>
           <q-item-section >{{$t('logout')}}</q-item-section>
         </q-item>

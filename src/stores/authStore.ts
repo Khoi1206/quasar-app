@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia';
 
 export type UserAuthType = {
-  username: string
+  email: string
 };
 
 export const useAuthStore = defineStore('auth', {

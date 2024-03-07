@@ -30,9 +30,9 @@
   "want_delete": "Are you want to delete this data?",
   "general": "General",
   "history": "History",
-
   "upload_logo": "Upload Logo",
   "title_web": "Title Website",
-
-  "status": "Status"
+  "status": "Status",
+  "todo": "Todo",
+  "task": "Task"
 }

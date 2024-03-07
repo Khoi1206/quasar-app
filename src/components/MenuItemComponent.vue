@@ -13,13 +13,12 @@
     </MenuItemComponent>
   </q-expansion-item>
   <q-item
+    v-else
     clickable
     :to="item.to"
     :active="
       $route.name?.toString() ===
-      (typeof item.to == 'string' ? item.to : item.to.name)
-    "
-    v-else
+      (typeof item.to == 'string' ? item.to : item.to.name)"
   >
     <q-item-section avatar>
       <q-icon :name="item.icon" />

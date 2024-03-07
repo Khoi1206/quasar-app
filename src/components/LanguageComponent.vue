@@ -7,11 +7,9 @@
       map-options
       borderless
       hide-dropdown-icon
-      dark
-      color="white"
     >
       <template v-slot:prepend>
-        <q-icon name="language" class="text-white"/>
+        <q-icon name="language" class="text-dark"/>
       </template>
     </q-select>
   </q-item-section>
@@ -31,7 +29,7 @@ export default defineComponent({
     return{
       locale,
       localeOptions: [
-        { value: 'en-US', label: 'English' },
+        { value: 'en-US', label: 'English',  },
         { value: 'vi-VN', label: 'Vietnamese' },
       ],
     }
@@ -40,5 +38,3 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
-</style>
